@@ -22,7 +22,7 @@ def adjDate(var1):
     date1 = datetime.date(year, month, day) + dd.datedelta(days = 5)
     return date1
 
-quandl.ApiConfig.api_key = 'VPC45PqKzTo2Mnyvns1w'
+quandl.ApiConfig.api_key = ''
 s1 = 'SNE'
 s2 = 'MCD'
 s3 = 'TGT'

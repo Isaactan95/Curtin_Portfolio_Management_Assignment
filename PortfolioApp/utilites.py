@@ -56,7 +56,7 @@ class utilites():
         return df
 
     def getTB(start, end):
-        quandl.ApiConfig.api_key = 'VPC45PqKzTo2Mnyvns1w'
+        quandl.ApiConfig.api_key = ''
         tb = quandl.get("FED/RIFSGFSM06_N_WF", start_date=start, end_date=end)
         return tb
 
@@ -65,8 +65,3 @@ class utilites():
         d = datetime.timedelta(weeks=27)
         t = str(u + d)
         return t[:10]
-
-u = datetime.datetime.strptime('2018-02-24', "%Y-%m-%d")
-d = datetime.timedelta(weeks=27)
-t = str(u + d)
-print(t[:10])
